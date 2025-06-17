@@ -8,12 +8,53 @@
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
     "/template": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/template.js"
+    ],
+    "/vendas/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/vendas/page.js"
+    ],
+    "/crm/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/crm/page.js"
+    ],
+    "/estoque/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/estoque/page.js"
+    ],
+    "/compras/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/compras/page.js"
+    ],
+    "/bi/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/bi/page.js"
+    ],
+    "/processos/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/processos/page.js"
+    ],
+    "/configuracoes/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/configuracoes/page.js"
+    ],
+    "/rh/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/rh/page.js"
     ]
   }
 }
