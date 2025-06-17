@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 24% 15%;
+    --foreground: 0 0% 100%;
+  }
+
+  body {
+    @apply bg-primary text-foreground antialiased;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-secondary rounded-lg border border-secondary/20 shadow-sm transition-all duration-200 hover:shadow-md;
+  }
+
+  .sidebar-item {
+    @apply flex items-center gap-3 px-4 py-2 rounded-md transition-all duration-200 hover:bg-secondary text-foreground/70 hover:text-foreground;
+  }
+
+  .sidebar-item.active {
+    @apply bg-accent text-primary hover:bg-accent-dark;
+  }
+
+  .metric-card {
+    @apply p-6 rounded-lg border border-secondary/20 bg-secondary hover:shadow-lg transition-all duration-200;
+  }
+
+  .metric-value {
+    @apply text-4xl font-bold tracking-tight text-foreground;
+  }
+
+  .metric-label {
+    @apply text-sm font-medium text-foreground/70;
+  }
+
+  .metric-change {
+    @apply text-xs font-medium text-accent mt-1;
+  }
+
+  .activity-item {
+    @apply flex items-center gap-4 py-3 border-b border-secondary/20 last:border-0 transition-colors duration-200 hover:bg-secondary/50;
+  }
+
+  .task-item {
+    @apply flex items-center gap-3 py-2 px-4 rounded-md transition-colors duration-200 hover:bg-secondary/50;
+  }
+
+  .header {
+    @apply sticky top-0 z-50 w-full border-b border-secondary/20 bg-primary/95 backdrop-blur supports-[backdrop-filter]:bg-primary/60;
+  }
+
+  .nav-item {
+    @apply px-4 py-2 text-sm font-medium transition-colors hover:text-foreground;
+  }
+
+  .btn-primary {
+    @apply bg-accent text-primary hover:bg-accent-dark inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-foreground hover:bg-secondary/80 inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent disabled:pointer-events-none disabled:opacity-50 h-9 px-4 py-2;
+  }
+}
